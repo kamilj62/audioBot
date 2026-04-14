@@ -1,5 +1,5 @@
 # kamilj62
-# Hi there! I'm Kamil J. 👋
+# Hi there! I'm Joseph Kamil 👋
 
 ## Tech Stack
 - Python
