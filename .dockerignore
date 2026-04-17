@@ -1,0 +1,15 @@
+.venv
+.git
+.gradio
+.ipynb_checkpoints
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.env
+.DS_Store
+flagged/
+# Include data files
+!data/*.txt
+!data/*.csv
+!data/*.json

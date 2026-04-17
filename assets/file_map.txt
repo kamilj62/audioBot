@@ -1,0 +1,44 @@
+.
+├── README.md
+├── app
+│   ├── chatbot_gradio_runner.ipynb
+│   ├── chatbot_gradio_runner.py
+│   └── data
+│       └── context.txt
+├── data
+│   ├── audio_bot_context.txt
+│   ├── audio_bot_context_extended.txt
+│   ├── call_center_prompt_with_intents_categories_context.csv
+│   ├── call_center_prompt_with_intents_categories_context.json
+│   ├── call_center_prompt_with_intents_categories_context.txt
+│   ├── financial_bot_context.txt
+│   └── travel_bot_context.txt
+├── file_map.txt
+├── genai_voice
+│   ├── bots
+│   │   └── chatbot.py
+│   ├── config
+│   │   └── defaults.py
+│   ├── data_utils
+│   │   ├── dataset_converter.py
+│   │   ├── extract_web_data.py
+│   │   └── urls.py
+│   ├── defintions
+│   │   ├── model_response_formats.py
+│   │   └── prompts.py
+│   ├── logger
+│   │   └── log_utils.py
+│   ├── models
+│   │   ├── model_config.py
+│   │   └── open_ai.py
+│   ├── moderation
+│   │   └── responses.py
+│   └── processing
+│       └── audio.py
+├── libs
+│   ├── ffmpeg.exe
+│   └── ffprobe.exe
+├── poetry.lock
+└── pyproject.toml
+
+14 directories, 28 files

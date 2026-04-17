@@ -1,0 +1,12 @@
+services:
+  audio-bot:
+    build: .
+    image: audio-bot:latest
+    ports:
+      - "80:7860"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_ORG_ID=${OPENAI_ORG_ID}
+      - OPENAI_PROJECT_ID=${OPENAI_PROJECT_ID}
+      - USE_LOCAL_WHISPER=False
+    restart: always
