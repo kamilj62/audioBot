@@ -2,6 +2,8 @@
 
 A modular, voice-enabled AI chatbot built with Python, OpenAI, and Gradio. Supports multiple bot personas (travel agent, financial advisor, call center rep, interview coach) with real-time speech-to-text input and text-to-speech responses. Deployed on AWS EC2 via Docker.
 
+> **My Contributions:** Built on an open-source GenAI voice framework. I extended it with an interview coach persona and handled end-to-end deployment to AWS EC2 using Docker — including server setup, swap configuration, containerization, and making the app publicly accessible.
+
 ---
 
 ## What It Does
