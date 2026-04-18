@@ -167,6 +167,19 @@ This app is deployed on AWS EC2 (t2.micro free tier) using Docker. See the full 
 
 ---
 
+## Challenges & Lessons Learned
+
+Deploying this to AWS was not straightforward — here's what I ran into and how I solved it:
+
+- **Account restrictions** — My AWS account was temporarily restricted during setup, which blocked instance creation. Had to work through AWS support to get it resolved before deployment could continue.
+- **Out of memory crashes** — The t2.micro only has 1GB of RAM. The Docker build kept failing mid-way. Fixed it by configuring 2GB of swap space on the instance, which gave the build enough headroom to complete.
+- **Docker permission errors** — Had to add the `ubuntu` user to the Docker group and re-login for permissions to take effect. Simple fix but not obvious from the error message.
+- **ffmpeg path issues** — Audio processing dependencies weren't resolving correctly inside the container on Linux. Traced it back to PATH configuration differences between local and the EC2 environment.
+
+The main takeaway: cloud deployment failures are rarely about one thing. You have to read the error, isolate the layer (AWS, Docker, OS, app), fix it, and move on to the next one. It took longer than expected but got there.
+
+---
+
 ## Tips for Best Results
 
 - Use a headset microphone for cleaner audio capture
