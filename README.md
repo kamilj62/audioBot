@@ -18,6 +18,8 @@ A modular, voice-enabled AI chatbot built with Python, OpenAI, and Gradio. Suppo
 
 ## Demo
 
+🌐 **Live Demo:** [http://50.18.70.71/](http://50.18.70.71/)
+
 ![AudioBot UI](assets/image.png)
 
 ---
@@ -162,6 +164,8 @@ This app is deployed on AWS EC2 (t2.micro free tier) using Docker. See the full 
 3. Upload your `.env` file with your OpenAI key
 4. Run `docker-compose up -d --build`
 5. Access the Gradio UI at `http://your-ec2-public-ip`
+
+**Live instance:** [http://50.18.70.71/](http://50.18.70.71/)
 
 > The app uses `USE_LOCAL_WHISPER=False` to offload transcription to OpenAI's API, keeping memory usage low enough to run on the 1GB t2.micro instance.
 
